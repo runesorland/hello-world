@@ -57,13 +57,8 @@ int main(int argc, char const *argv[]) {
   sphere_list.push_back(atom1);
   sphere_list.push_back(atom2);
 
-  //////////////////printing////////////////////
-  //std::cout << "size of sphere_list:" << sphere_list.size() << std::endl;
-  //for   (int i = 0; i < sphere_list.size(); i=i+1){
-  //  std::cout << "atom:"  << i+1 << std::endl << sphere_list[i] << std::endl;
-
-  //}
-
+  ///////print to file plottable///
+  ////run with gnuplot> splot "plottable" u 1:2:3:4 ps variable pt 7
   std::ofstream myfile;
   myfile.open ("plottable");
   for(int i = 0; i < sphere_list.size(); i=i+1){
