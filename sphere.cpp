@@ -43,7 +43,7 @@ Sphere::Sphere  (const Eigen::Vector3d &a  , double b){
   center  = a;
   radius  = b;
 }
-
+//copy constructor
 Sphere::Sphere (const Sphere & sph){
   center = sph.center;
   radius = sph.radius;
@@ -68,10 +68,5 @@ int main(int argc, char const *argv[]) {
     std::cout << "atom:"  << i+1 << std::endl << sphere_list[i] << std::endl;
 
 }
-
-
-  /////////////////////////////////////////////////
-
-
   return 0;
 }
