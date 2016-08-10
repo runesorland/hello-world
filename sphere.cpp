@@ -20,6 +20,7 @@ class Sphere{
   double get_radius () const {
     return radius;
   }
+
   //making the output plottable for gnuplot
   friend std::ostream & operator<<( std::ostream & output, const Sphere & sph){
     output  <<  sph.center(0) << " " << sph.center(1) << " " << sph.center(2) << " " <<  sph.radius ;
@@ -27,7 +28,6 @@ class Sphere{
   }
 
 };
-
 
 //default constructor
 Sphere::Sphere(){
