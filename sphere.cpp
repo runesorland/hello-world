@@ -6,6 +6,7 @@
 
 
 class Sphere{
+  private:
     Eigen::Vector3d center;
     double radius;
   public:
@@ -13,18 +14,17 @@ class Sphere{
     Sphere  (const Eigen::Vector3d &a , double b) ; // const og & når du har lært det!!!!
     Sphere (const Sphere & sph ); //copy constructor,,,,les deg opp!!!
     //Sphere& operator=(const Sphere &sph);//se nermere på, overloading.
-    Eigen::Vector3d get_center() const {
-      return center;
-    }
-    double get_radius () const {
-      return radius;
-    }
-    //making the output plottable for gnuplot
-    friend std::ostream & operator<<( std::ostream & output, const Sphere & sph)
-      {
-      output  <<  sph.center(0) << " " << sph.center(1) << " " << sph.center(2) << " " <<  sph.radius ;
-      return output;
-      }
+  Eigen::Vector3d get_center() const {
+    return center;
+  }
+  double get_radius () const {
+    return radius;
+  }
+  //making the output plottable for gnuplot
+  friend std::ostream & operator<<( std::ostream & output, const Sphere & sph){
+    output  <<  sph.center(0) << " " << sph.center(1) << " " << sph.center(2) << " " <<  sph.radius ;
+    return output;
+  }
 
 };
 
@@ -56,6 +56,7 @@ int main(int argc, char const *argv[]) {
   std::vector<Sphere> sphere_list;
   sphere_list.push_back(atom1);
   sphere_list.push_back(atom2);
+  sphere_list.push_back(atom3);
 
   ///////print to file plottable///
   ////run with gnuplot> splot "plottable" u 1:2:3:4 ps variable pt 7
