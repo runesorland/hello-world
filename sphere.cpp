@@ -28,6 +28,7 @@ class Sphere{
 
 };
 
+
 //default constructor
 Sphere::Sphere(){
   center = Eigen::Vector3d(0,0,0);
