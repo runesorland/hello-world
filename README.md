@@ -1,5 +1,2 @@
-# hello-world
-this is an intruduction thing
-
-
-hallo hallo
+# Sphere
+  Sphere class in sphere.h, constructors in sphere.cpp, main e logisk.
