@@ -1,10 +1,9 @@
+#ifndef SPHERE_H_
+#define SPHERE_H_
 #include<iostream>
 #include<eigen3/Eigen/Core>
 #include<vector>
 #include<fstream>
-//#include<plot.hpp>
-
-
 class Sphere{
   private:
     Eigen::Vector3d center;
@@ -20,11 +19,10 @@ class Sphere{
   double get_radius () const {
     return radius;
   }
-
   //making the output plottable for gnuplot
   friend std::ostream & operator<<( std::ostream & output, const Sphere & sph){
     output  <<  sph.center(0) << " " << sph.center(1) << " " << sph.center(2) << " " <<  sph.radius ;
     return output;
   }
-
 };
+#endif
