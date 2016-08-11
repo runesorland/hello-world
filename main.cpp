@@ -1,9 +1,9 @@
-#include "sphere.h"
 #include<iostream>
 #include<eigen3/Eigen/Core>
 #include<vector>
 #include<fstream>
 
+#include "sphere.h"
 
 int main(int argc, char const *argv[]) {
   Eigen::Vector3d posatom1(0.1,.1,.1);

@@ -2,9 +2,8 @@
 #include<eigen3/Eigen/Core>
 #include<vector>
 #include<fstream>
+
 #include"sphere.h"
-
-
 
 //default constructor
 Sphere::Sphere(){
@@ -12,9 +11,9 @@ Sphere::Sphere(){
   radius  = 10;
 }
 //"input" constructor
-Sphere::Sphere  (const Eigen::Vector3d &a  , double b){
-  center  = a;
-  radius  = b;
+Sphere::Sphere(const Eigen::Vector3d &c  , double r){
+  center  = c;
+  radius  = r;
 }
 //copy constructor
 Sphere::Sphere (const Sphere & sph){
