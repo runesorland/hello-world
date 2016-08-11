@@ -5,7 +5,7 @@
 #include<vector>
 #include<fstream>
 class Sphere{
-  private:
+  priva    te:
     Eigen::Vector3d center;
     double radius;
   public:
