@@ -4,8 +4,9 @@
 #include<eigen3/Eigen/Core>
 #include<vector>
 #include<fstream>
+
 class Sphere{
-  priva    te:
+  private:
     Eigen::Vector3d center;
     double radius;
   public:
