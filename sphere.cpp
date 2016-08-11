@@ -47,8 +47,8 @@ Sphere::Sphere (const Sphere & sph){
 
 
 int main(int argc, char const *argv[]) {
-  Eigen::Vector3d posatom1(1,2.2,1);
-  double radius1 = 12.1;
+  Eigen::Vector3d posatom1(0.1,.1,.1);
+  double radius1 = 11;
   Sphere atom1(posatom1, radius1);
   Sphere atom2;
 
