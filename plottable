@@ -1,3 +1,9 @@
-0.1 0.1 0.1 11
-0 0 0 10
-0.1 0.1 0.1 11
+set output "sphere_plot.ps"
+set parametric
+set angle radian
+set urange [0:2*pi]
+set vrange [0:2*pi]
+set isosample 40,40
+set ticslevel 0
+set size 1.0,1.0
+splot 11*cos(u)*cos(v) +0.1,11*sin(u)*cos(v)+0.1,11*sin(v)+0.1,10*cos(u)*cos(v) +0,10*sin(u)*cos(v)+0,10*sin(v)+0,11*cos(u)*cos(v) +0.1,11*sin(u)*cos(v)+0.1,11*sin(v)+0.1

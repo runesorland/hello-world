@@ -23,7 +23,7 @@ int main(int argc, char const *argv[]) {
   std::ofstream myfile;
   myfile.open ("plottable");
   for(int i = 0; i < sphere_list.size(); i=i+1){
-    myfile << sphere_list[i] << std::endl;
+    myfile << sphere_list[i];
   }
   myfile.close();
 
