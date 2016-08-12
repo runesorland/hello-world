@@ -8,7 +8,7 @@
 //default constructor
 Sphere::Sphere(){
   center = Eigen::Vector3d(0,0,0);
-  radius  = 10;
+  radius  = 1;
 }
 //"input" constructor
 Sphere::Sphere(const Eigen::Vector3d &c  , double r){

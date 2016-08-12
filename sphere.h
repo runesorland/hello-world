@@ -24,7 +24,9 @@ class Sphere{
   friend std::ostream & operator<<( std::ostream & output, const Sphere & sph){
     static int i = 0;
     if (i++ == 0) {
-    output<< "set output \"sphere_plot.ps\"" << std::endl
+      ///MÅ HA MED SET TERMINAL GREIE!!!!!
+    output<< "set terminal postscript enhanced color portrait \"Times-Roman,9\"" << std::endl
+          <<"set output \"sphere_plot.ps\"" << std::endl
           << "set parametric" << std::endl
           << "set angle radian" << std::endl
           << "set urange [0:2*pi]" << std::endl
