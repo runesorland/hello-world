@@ -4,7 +4,7 @@ set parametric
 set angle radian
 set urange [0:2*pi]
 set vrange [0:2*pi]
-set isosample 40,40
+set isosample 100,100
 set ticslevel 0
 set size 1.0,1.0
-splot 1*cos(u)*cos(v) +0.5,1*sin(u)*cos(v)+0.5,1*sin(v)+0.5,1*cos(u)*cos(v) +0,1*sin(u)*cos(v)+0,1*sin(v)+0
+splot 1*cos(u)*cos(v) +0.5,1*sin(u)*cos(v)+0.5,1*sin(v)+0,1*cos(u)*cos(v) +0.5,1*sin(u)*cos(v)+-0.5,1*sin(v)+0,1*cos(u)*cos(v) +-0.5,1*sin(u)*cos(v)+-0.5,1*sin(v)+0,1*cos(u)*cos(v) +-5,1*sin(u)*cos(v)+0.5,1*sin(v)+0
