@@ -31,7 +31,7 @@ class Sphere{
           << "set angle radian" << std::endl
           << "set urange [0:2*pi]" << std::endl
           << "set vrange [0:2*pi]" << std::endl
-          << "set isosample 100,100" << std::endl
+          << "set isosample 10,10" << std::endl
           << "set ticslevel 0"  << std::endl
           << "set size 1.0,1.0" << std::endl << "splot ";
       }
