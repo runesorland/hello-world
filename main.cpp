@@ -15,7 +15,7 @@ int main(int argc, char const *argv[]) {
   Eigen::Vector3d posatom3(-.5,-.5,0);
   double radius3 = 1;
   Sphere atom3(posatom3,radius3);
-  Eigen::Vector3d posatom4(-5,.5,0);
+  Eigen::Vector3d posatom4(-.5,.5,0);
   double radius4 = 1;
   Sphere atom4(posatom4,radius4);
 
