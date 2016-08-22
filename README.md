@@ -1,6 +1,4 @@
 # Sphere
   Sphere class in sphere.h, constructors in sphere.cpp, main e logisk.
 
-  The program generates a file of spheres, starting with 3 numbers which are the center(nucles) and a forth which is the radius of the sphere you want.
-  It is made so that it can be plotted with gnuplot
-    gnuplot> splot "plottable" u 1:2:3:4 ps variable pt 7
+  The program generates a file of spheres called plottable.plt, this file is readable by gnuplot>plottable.plt. generates a ps file called sphere_plot.ps. It can also be opened with gnuplot directly by removing the top two lines of this file. To change the posistion and or the radius of the spheres, see main.
