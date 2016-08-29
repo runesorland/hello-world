@@ -30,23 +30,17 @@ int main(int argc, char const *argv[]) {
   sphere_list.push_back(atom2);
   sphere_list.push_back(atom3);
   sphere_list.push_back(atom4);
-  /*
-  sphere_list.push_back(atom3);
-  sphere_list.push_back(atom3);
-  sphere_list.push_back(atom3);
-  sphere_list.push_back(atom3);
-*/
-
 
 
   ///////print to file plottable///
-  ////run with gnuplot> splot "plottable" u 1:2:3:4 ps variable pt 7
   std::ofstream myfile;
   myfile.open ("plottable.plt");
   for(int i = 0; i < sphere_list.size(); i=i+1){
     myfile << sphere_list[i];
   }
   myfile.close();
+
+  std::cout <<  << std::endl;
 
   return 0;
 }
