@@ -42,8 +42,6 @@ class Sphere{
             << "," << sph.radius <<"*sin(u)*cos(v)+" << sph.center(1)
             << "," << sph.radius <<"*sin(v)+" << sph.center(2);
 
-
-
     return output;
   }
 };
