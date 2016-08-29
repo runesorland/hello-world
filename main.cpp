@@ -40,7 +40,6 @@ int main(int argc, char const *argv[]) {
   }
   myfile.close();
 
-  std::cout <<  << std::endl;
 
   return 0;
 }
